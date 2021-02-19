@@ -21,7 +21,7 @@ public class InventoryDetail implements RequestHandler<HttpQueryStringRequest, H
 
     @Override
     public HttpProductResponse handleRequest(HttpQueryStringRequest request, Context context) {
-        context.getLogger().log("Input: " + request);
+        context.getLogger().log("This is an Input: " + request);
         context.getLogger().log("Input size: " + request.getQueryStringParameters().size());
         
         String idStr= (String)request.getQueryStringParameters().get("id");
